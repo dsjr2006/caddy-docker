@@ -1,7 +1,11 @@
-0.0.0.0
-
-browse
-
-log stdout
-
-errors stdout
+0.0.0.0 {
+    gzip
+    cache
+    root /srv/www/public
+    log ../access.log {
+        rotate_size 20 # Rotate at 20MB
+	    rotate_age 16 # Keep logs for 16 days
+	    rotate_keep 15 # Keep up to 15 logs
+    }
+    errors ../error.log
+}

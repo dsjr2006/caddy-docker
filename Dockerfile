@@ -1,9 +1,9 @@
-FROM alpine:3.5
-LABEL maintainer "Abiola Ibrahim <abiola89@gmail.com>"
+FROM alpine:3.6
+LABEL maintainer "Darwin Smith II <dwin@dlsmi.com>"
 
 LABEL caddy_version="0.10.6" architecture="amd64"
 
-ARG plugins=http.git
+ARG plugins=http.cache,http.git,http.ratelimit
 
 RUN apk add --no-cache openssh-client git tar curl
 
@@ -19,7 +19,7 @@ VOLUME /root/.caddy
 WORKDIR /srv
 
 COPY Caddyfile /etc/Caddyfile
-COPY index.html /srv/index.html
+COPY index.html /srv/www/public/index.html
 
 ENTRYPOINT ["/usr/bin/caddy"]
 CMD ["--conf", "/etc/Caddyfile", "--log", "stdout"]
