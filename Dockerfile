@@ -3,7 +3,7 @@ LABEL maintainer "Darwin Smith II <dwin@dlsmi.com>"
 
 LABEL caddy_version="0.10.7" architecture="amd64"
 
-ARG plugins=http.cache,http.git,http.ratelimit
+ARG plugins=http.cache,http.git,http.ratelimit,http.datadog
 
 RUN apk add --no-cache openssh-client git tar curl
 
