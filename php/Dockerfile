@@ -1,5 +1,5 @@
-FROM alpine:3.5
-LABEL maintainer "Abiola Ibrahim <abiola89@gmail.com>"
+FROM alpine:3.6
+LABEL maintainer "Darwin Smith II <dwin@dlsmi.com>"
 
 LABEL caddy_version="0.10.6" architecture="amd64"
 
