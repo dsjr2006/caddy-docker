@@ -6,6 +6,10 @@ This is a [Docker](https://docker.com) image for [Caddy](https://caddyserver.com
 [![](https://images.microbadger.com/badges/version/dwin/caddy.svg)](https://microbadger.com/images/dwin/caddy "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/dwin/caddy.svg)](https://microbadger.com/images/dwin/caddy "Get your own image badge on microbadger.com")
 
+## Supported Tags
+- latest
+- dns, *includes DNS plugsins as detailed [here](https://github.com/dwin/caddy-docker/tree/master/dns)*
+
 ## Getting Started
 
 ```sh
