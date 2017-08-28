@@ -1,7 +1,7 @@
 FROM alpine:3.6
 LABEL maintainer "Darwin Smith II <dwin@dlsmi.com>"
 
-LABEL caddy_version="0.10.6" architecture="amd64"
+LABEL caddy_version="0.10.7" architecture="amd64"
 
 ARG plugins=http.cache,curl https://getcaddy.com | bash -s curl https://getcaddy.com | bash -s http.cache,http.datadog,http.git,http.ratelimit,http.realip,tls.dns.cloudflare,tls.dns.digitalocean,tls.dns.dnsimple,tls.dns.dyn,tls.dns.route53,tls.dns.vultr
 
