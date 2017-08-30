@@ -7,8 +7,9 @@ This is a [Docker](https://docker.com) image for [Caddy](https://caddyserver.com
 [![](https://images.microbadger.com/badges/image/dwin/caddy.svg)](https://microbadger.com/images/dwin/caddy "Get your own image badge on microbadger.com")
 
 ## Supported Tags
-- latest
-- dns, *includes DNS plugsins as detailed [here](https://github.com/dwin/caddy-docker/tree/master/dns)*
+- ```latest```
+- ```dns```, *includes DNS plug-ins as detailed [here](https://github.com/dwin/caddy-docker/tree/master/dns)*
+- ```noplugins``` , ```noplugins-0.10.7```
 
 ## Getting Started
 
