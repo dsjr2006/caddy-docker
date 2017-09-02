@@ -1,10 +1,8 @@
 FROM alpine:3.6
 LABEL maintainer "Darwin Smith II <dwin@dlsmi.com>"
-
 LABEL caddy_version="0.10.7" architecture="amd64"
 
-ARG plugins=http.cache,http.datadog,http.git,http.ratelimit,http.realip,tls.dns.cloudflare,tls.dns.digitalocean,tls.dns.dnsimple,tls.dns.dyn,tls.dns.route53,tls.dns.vultr
-
+ARG plugins=http.cache,http.git,http.ratelimit,http.realip,tls.dns.cloudflare,tls.dns.digitalocean,tls.dns.dnsimple,tls.dns.dnspod,tls.dns.dyn,tls.dns.exoscale,tls.dns.gandi,tls.dns.googlecloud,tls.dns.linode,tls.dns.namecheap,tls.dns.ovh,tls.dns.rackspace,tls.dns.rfc2136,tls.dns.route53,tls.dns.vultr
 RUN apk add --no-cache openssh-client git tar curl
 
 RUN curl --silent --show-error --fail --location \
