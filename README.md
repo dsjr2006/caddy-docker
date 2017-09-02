@@ -1,7 +1,7 @@
 # caddy
 _Fork of [https://github.com/abiosoft/caddy-docker](https://github.com/abiosoft/caddy-docker)._
 
-This is a [Docker](https://docker.com) image for [Caddy](https://caddyserver.com) based on [Alpine Linux 3.6](https://alpinelinux.org). This image includes the [git](https://caddyserver.com/docs/http.git), [data-dog](https://caddyserver.com/docs/http.datadog), [rate limit](https://caddyserver.com/docs/http.ratelimit), and [cache](https://caddyserver.com/docs/http.cache) plugins.  Plugins can be configured via the `plugins` build arg.
+This is a [Docker](https://docker.com) image for [Caddy](https://caddyserver.com) based on [Alpine Linux 3.6](https://alpinelinux.org). This image includes the [git](https://caddyserver.com/docs/http.git), [rate limit](https://caddyserver.com/docs/http.ratelimit), and [cache](https://caddyserver.com/docs/http.cache) plugins.  Plugins can be configured via the `plugins` build arg.
 
 [![](https://images.microbadger.com/badges/version/dwin/caddy.svg)](https://microbadger.com/images/dwin/caddy "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/dwin/caddy.svg)](https://microbadger.com/images/dwin/caddy "Get your own image badge on microbadger.com")
