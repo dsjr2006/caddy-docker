@@ -1,9 +1,9 @@
 FROM alpine:3.6
 LABEL maintainer "Darwin Smith II <dwin@dlsmi.com>"
 
-LABEL caddy_version="0.10.7" architecture="amd64"
+LABEL caddy_version="0.10.8" architecture="amd64"
 
-RUN apk add --no-cache openssh-client git tar curl
+RUN apk add --no-cache openssh-client tar curl
 
 RUN curl --silent --show-error --fail --location \
       --header "Accept: application/tar+gzip, application/x-gzip, application/octet-stream" -o - \
