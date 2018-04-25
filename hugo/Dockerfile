@@ -2,7 +2,7 @@ FROM alpine:3.7
 LABEL maintainer "Darwin Smith II <dwin@dlsmi.com>"
 LABEL caddy_version="0.10.14" architecture="amd64"
 
-ARG plugins=http.cache,http.git,http.ratelimit,http.realip,http.hugo,http.filemanager,tls.dns.cloudflare,tls.dns.digitalocean,tls.dns.dyn,tls.dns.googlecloud,tls.dns.rfc2136,tls.dns.route53,tls.dns.vultr
+ARG plugins=http.cache,http.filemanager,http.git,http.hugo,tls.dns.cloudflare,tls.dns.digitalocean,tls.dns.dyn,tls.dns.rfc2136,tls.dns.route53,tls.dns.vultr
 
 RUN apk add --no-cache openssh-client git tar curl
 
@@ -22,4 +22,3 @@ COPY index.html /srv/www/public/index.html
 
 ENTRYPOINT ["/usr/bin/caddy"]
 CMD ["--conf", "/etc/Caddyfile", "--log", "stdout"]
-
