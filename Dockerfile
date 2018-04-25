@@ -1,7 +1,7 @@
 FROM alpine:3.7
 LABEL maintainer "Darwin Smith II <dwin@dlsmi.com>"
 
-LABEL caddy_version="0.10.10" architecture="amd64"
+LABEL caddy_version="0.10.14" architecture="amd64"
 
 ARG plugins=http.cache,http.git,http.ratelimit
 
