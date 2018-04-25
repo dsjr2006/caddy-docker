@@ -1,15 +1,15 @@
 # caddy
 _Fork of [https://github.com/abiosoft/caddy-docker](https://github.com/abiosoft/caddy-docker)._
 
-This is a [Docker](https://docker.com) image for [Caddy](https://caddyserver.com) based on [Alpine Linux 3.6](https://alpinelinux.org). This image includes the [git](https://caddyserver.com/docs/http.git), [rate limit](https://caddyserver.com/docs/http.ratelimit), and [cache](https://caddyserver.com/docs/http.cache) plugins.  Plugins can be configured via the `plugins` build arg.
+This is a [Docker](https://docker.com) image for [Caddy](https://caddyserver.com) based on [Alpine Linux 3.7](https://alpinelinux.org). This image includes the [git](https://caddyserver.com/docs/http.git), [rate limit](https://caddyserver.com/docs/http.ratelimit), and [cache](https://caddyserver.com/docs/http.cache) plugins.  Plugins can be configured via the `plugins` build arg.
 
 [![](https://images.microbadger.com/badges/version/dwin/caddy.svg)](https://microbadger.com/images/dwin/caddy "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/dwin/caddy.svg)](https://microbadger.com/images/dwin/caddy "Get your own image badge on microbadger.com")
 
 ## Supported Tags
-- ```latest```, ```0.10.10```,```0.10.8```
-- ```dns```, ```dns-0.10.10```,```dns-0.10.8```, *includes DNS plug-ins as detailed [here](https://github.com/dwin/caddy-docker/tree/master/dns)*
-- ```noplugins```, ```noplugins-0.10.10```,```noplugins-0.10.9```,```noplugins-0.10.8```, ```noplugins-0.10.7```
+- ```latest```,```0.10.14```, ```0.10.10```,```0.10.8```
+- ```dns```,```dns-0.10.14```, ```dns-0.10.10```,```dns-0.10.8```, *includes DNS plug-ins as detailed [here](https://github.com/dwin/caddy-docker/tree/master/dns)*
+- ```noplugins```,```noplugins-0.10.14```,```noplugins-0.10.10```,```noplugins-0.10.9```,```noplugins-0.10.8```, ```noplugins-0.10.7```
 
 ## Getting Started
 
